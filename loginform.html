@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+
+<style>
+s
+body {
+    background-color: #f5e6ff;
+    font-family: Georgia, serif;
+}
+
+
+form {
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fffaf5;
+    border: 2px solid #8e44ad;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease-in-out;
+}
+
+
+form:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+h1 {
+    text-align: center;
+    color: #6c3483;
+    margin-bottom: 25px;
+    font-family: "Trebuchet MS", sans-serif;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+h1:hover {
+    color: #d35400;
+    transform: scale(1.05);
+}
+
+label {
+    color: #5d4037;
+    font-weight: bold;
+    font-family: "Trebuchet MS", sans-serif;
+    transition: color 0.3s ease;
+}
+
+
+input {
+    width: 95%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #b7950b;
+    border-radius: 5px;
+    background-color: #fffdf0;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+
+input:focus {
+    border: 2px solid #8e44ad;
+    outline: none;
+    transform: scale(1.03);
+    box-shadow: 0 0 8px rgba(142, 68, 173, 0.5);
+    background-color: #f8ecff;
+}
+
+
+input:valid {
+    border-left: 4px solid #27ae60;
+}
+
+
+input:invalid:focus {
+    border-left: 4px solid #e74c3c;
+}
+
+
+label:nth-of-type(odd) {
+    color: #6c3483;
+}
+
+label:nth-of-type(even) {
+    color: #d35400;
+}
+
+
+button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 30px;
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+button:hover {
+    background-color: #6c3483;
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 0 5px 15px rgba(108, 52, 131, 0.4);
+}
+
+
+button:active {
+    transform: scale(0.95);
+    background-color: #512e5f;
+}
+
+
+form label:first-of-type {
+    letter-spacing: 1px;
+}
+
+</style>
+</head>
+
+<body>
+
+<form>
+
+    <h1>Registration Form</h1>
+
+    <label>Employee Name:</label>
+    <input type="text" name="name" id="name" required>
+    <br><br>
+
+    <label>Employee ID:</label>
+    <input type="number" name="id" id="id" required>
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" id="email" required>
+    <br><br>
+
+    <label>Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+    <br><br>
+
+    <label>Phone Number:</label>
+    <input type="tel" id="phum" name="pnum" required>
+    <br><br>
+
+    <label>Address:</label>
+    <input type="text" id="Address" name="address" required>
+    <br><br>
+
+    <button>Login</button>
+
+</form>
+
+</body>
+</html>
+
